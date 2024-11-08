@@ -7,7 +7,7 @@
     <style>
         body {
             display: flex;
-            flex-direction: column;
+            flex-direction: column;    
             justify-content: center;
             align-items: center;
             height: 100vh;
@@ -270,7 +270,7 @@
             checkForNewObstacles();
 
             requestAnimationFrame(update);
-        }
+        }  
 
         window.addEventListener('keydown', function (event) {
             if (event.key === 'ArrowRight') {
@@ -293,12 +293,13 @@
         });
 
         for (let i = 0; i < 5; i++) {
-            createCloud();
+            createCloud();                
             createStar();
-        }
+        }                
+        
 
         backgroundMusic.play();
-        backgroundMusic.volume = 0;
+        backgroundMusic.volume = 0;     
         let volumeIncrease = setInterval(function() {
             if (backgroundMusic.volume < 1) {
                 backgroundMusic.volume += 0.01;
@@ -311,3 +312,6 @@
     </script>
 </body>
 </html>
+
+
+NAO PODE COLAR DO AMIGUINHO, SÒ LER E ESTUDAR E CLARO APRENDER 
